@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:ital,wght@0,100;1,100&family=Open+Sans:wght@300;400;600;700&family=Playfair+Display&display=swap');
+
+:root {
+/*    Blanc : #ffffff
+Noir : #000000
+Orange : #ff6347
+Gris : #797878
+Gris clair : #d9d7d7    
+*/
+
+--white: #ffffff;
+--black: #000000;
+--orange: #ff6347;
+--grey: #797878;
+--lightGrey: #d9d7d7;
+}
+
+* {
+    font-family: 'Arvo', sans-serif;
+    font-size: 14px; 
+    color:  var(--black);
+    font-style: normal;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: url("../images/hero-image.jpg");
+    color: var(--lightGrey); 
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+header h1 {
+    color: var(--white);
+    text-transform: uppercase;  
+}
+
+header .bold {
+    font-weight: bold;
+    color: var(--white);
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+header section {
+    width: 80%;
+    margin: auto;
+}
+
+header section a {
+    text-decoration: none;
+    background-color:  var(--orange);
+    border-radius: 2px; 
+    padding: 4px 12px;    
+
+}
+
+.button {
+    background-color: var(--white);
+}
+
+main {
+    text-align: center;
+}
+
+main span {
+    color: var(--orange);
+}
+
+main h2 {
+    border-bottom: var(--orange);
+    border: 1px;
+}
+
+main h2,
+main h3 {
+    color: var(--orange);
+    text-transform: uppercase;
+}
+
+main .bold {
+    font-weight: bold;
+}
+
+main section div div {
+    border:none;
+    border-width: 1px;
+    border-radius: 40px;
+    padding:14px 14px;
+    background-color: var(--black);
+    height: 14px;
+    width: 14px;
+}
+
+.squareIcon {
+    border:solid;
+    border-width: 1px;
+    border-radius: 40px;
+    border-color:var(white)     ;
+    color: var(--white);
+    padding:4px 14px;
+    background-color: var(--grey);
+}
+
+footer {
+    text-align: left;
+    background-color: var(--orange);
+}
+
+footer img {
+    padding-top: 100px;
+    width: 200px;
+}
+
+
+@media (max-width: 1250px) {
+
+}
+    
