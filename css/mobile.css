@@ -74,7 +74,8 @@ header section div {
     align-items: center;
     background: url("../images/hero-image.jpg");
     background-position: top left;
-    aspect-ratio: 1467 / 2200;
+    width: auto;
+    height: auto;
 }
 
 header section div a {
@@ -88,6 +89,10 @@ header section div a {
 
 }
 
+header section div img {
+    margin-bottom: 20px;
+}
+
 /* main part of the page */
 
 .roundedIcon {
@@ -97,7 +102,11 @@ header section div a {
 }
 
 .roundedIcon img {
-    filter: invert(1000%);
+    filter: invert(100%);
+}
+
+main {
+    padding-bottom: 40px;
 }
 
 main section div div p {
@@ -117,6 +126,11 @@ main section div div a {
 main section img {
     margin-top: 20px;
     margin-bottom: 20px;    
+}
+
+main section p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 main span {
@@ -156,7 +170,7 @@ main h3 {
 
 .separator {
     border-bottom: 1px solid var(--orange);
-    width: 50%;
+    width: 25%;
     margin: auto;
 }
 
@@ -213,6 +227,7 @@ footer img {
         flex-direction: row;
     }
     /* to corrrect a directive to improve display of backgroung image in header */
+    /*
     header section div {
         display:flex;
         flex-direction: column;
@@ -220,6 +235,10 @@ footer img {
         background: url("../images/hero-image.jpg");
         background-position: top left;
         background-repeat: no-repeat;
+    }
+    */
+    .separator {
+        width: 10%;
     }
 }
 
