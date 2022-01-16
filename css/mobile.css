@@ -16,28 +16,18 @@ Gris clair : #d9d7d7
 }
 
 
-/* définit les atrtributs globaux à toute la page*/
+/* define global attributes common to the whole page */
 * {
-    font-family: 'Arvo', sans-serif; /*Font*/
-    font-size: 14px; /*Taille de police */
+    font-family: 'Arvo', sans-serif; /* Font */
+    font-size: 14px; /* Font size */
     margin: 0;
-    text-align: center; /* texte centré*/
+    text-align: center; /* centered text */
 }
 
-.computer {
-    display:none;
-}
 
-header {
-    color: var(--black); 
-}
 
-header section div p {
-    color: var(--white);
-    font-weight: lighter;
-    width: 60%;
-    margin:  20px auto;
-}
+/* header part */
+
 
 header nav {
     display: flex;
@@ -46,12 +36,23 @@ header nav {
     padding: 10px 15px;
 }
 
+header nav ul {
+    gap: 35px;
+}
+
 header section h1 {
     color: var(--white);
     width: 60%;
     margin: 50px auto 0 auto;
     font-weight: lighter;
     font-size: 1.5rem;
+}
+
+header section div p {
+    color: var(--white);
+    font-weight: lighter;
+    width: 60%;
+    margin:  20px auto;
 }
 
 .bold {
@@ -86,6 +87,8 @@ header section div a {
     margin-bottom: 20px;
 
 }
+
+/* main part of the page */
 
 .roundedIcon {
     border:0.2px solid var(--white);
@@ -133,17 +136,11 @@ main h3 {
     color: var(--orange);
     text-transform: uppercase;
 }
-/*
-.white {
-    color: var(--white);    
-}
-*/
+
 .circle {
     width: 100px;
     height: 100px;
     border-radius: 50%;
- /*   border-color:var(white); */
-  /*  color: var(--white); */
     background-color: var(--black);
     position: relative;
     margin: 40px auto;
@@ -173,6 +170,8 @@ main h3 {
     background-color: var(--grey);
 }
 
+/* Footer part */
+
 footer {
     text-align: left;
     background-color: var(--orange);
@@ -184,6 +183,10 @@ footer img {
     width: 200px;
 }
 
+/* class to define computer behaviour */
+.computer {
+    display:none; /* no display for smartphones */ 
+}
 
 @media (min-width: 1250px) {
  
@@ -196,17 +199,20 @@ footer img {
     } 
 
     .computer a {
-        text-decoration: none;
+        text-decoration: none; /* no underline for menu links */
         color: var(--white);
     }
 
     .mobile {
-        display:  none;
+        display:  none; /* no diplay of the burger icon for computers */
     }
+
+    /* class to display the three cards as grid */
     .grid {
         display: flex;
         flex-direction: row;
     }
+    /* to corrrect a directive to improve display of backgroung image in header */
     header section div {
         display:flex;
         flex-direction: column;
